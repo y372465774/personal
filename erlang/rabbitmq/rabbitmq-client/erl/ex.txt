@@ -1,0 +1,7 @@
+backup.hstore.exchange	topic	TRUE	FALSE	FALSE	[]		rabbitmq-ha
+cbh.hstore.exchange	topic	TRUE	FALSE	FALSE	[]		rabbitmq-ha
+cbs.teller.broadcast	fanout	TRUE	FALSE	FALSE	[]		rabbitmq-ha
+efs.hstore.exchange	topic	TRUE	FALSE	FALSE	[]		rabbitmq-ha
+hbase1.hstore.exchange	topic	TRUE	FALSE	FALSE	[]		rabbitmq-ha
+hbase2.hstore.exchange	topic	TRUE	FALSE	FALSE	[]		rabbitmq-ha
+

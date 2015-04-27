@@ -1,0 +1,19 @@
+#! /usr/bin/env python
+import pika
+import sys
+
+connection = pika.BlockingConnection(pika.ConnectionParameters(
+                                    host='localhost'))
+
+channel = connection.channel()
+
+channel.exchange_declare(exchange = 'hello')
+
+queue = channel.queue_declare(queue = "hehe")
+bhb = 'test'
+print '--->',queue
+channel.queue_bind(exchange = 'hello',
+                    queue = queue,
+                    routing_key = bhb)
+
+connection.close()
